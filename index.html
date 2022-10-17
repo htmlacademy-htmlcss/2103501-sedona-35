@@ -8,11 +8,11 @@
 
   <body>
     <header class="page-header">
-      <img src="#" alt="Логотип Седоны">
+      <img src="#" alt="Логотип Седоны" width="140" height="70">
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="index.html"> Главная</a>
+            <a class="navigation-link navigation-link-current" href="#"> Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="about.html"> О Седоне</a>
@@ -46,9 +46,7 @@
     <main class="main-index">
       <section class="prewiew">
         <h1 class="visually-hidden">Основная информация о городе Седона</h1>
-        <img class="prewiew-logo" src="#" alt="Добро пожаловать великолепное место  Седона ">
-      </section>
-      <section class="main-description">
+        <img class="prewiew-logo" src="#" alt="Добро пожаловать великолепное место  Седона " width="458" height="352">
         <h2 class="main-description-title">Седона — небольшой городок в Аризоне,
           заслуживающий большего!</h2>
         <p class="main-description-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -59,7 +57,7 @@
           <li class="advantages-item">
             <h3 class="advantages-name">Настоящий Городок</h3>
             <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            <img class="advantages-image" src="#" alt="Гостиница в городе Седона">
+            <img class="advantages-image" src="#" alt="Гостиница в городе Седона" width="800" height="400">
           </li>
           <li class="advantages-item">
             <h3 class="advantages-name">Небольшая площадь</h3>
@@ -76,22 +74,22 @@
         </ul>
         <ul class="advantages-list">
           <li class="advantages-item">
-            <img class="advantages-image" src="#" alt="Мост дьявола">
+            <img class="advantages-image" src="#" alt="Мост дьявола" width="800" height="384">
             <h3 class="advantages-name">Там есть мост дьявола</h3>
             <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </li>
           <li class="advantages-item">
-            <img src="#" alt="Иконка дома">
+
             <h3 class="advantages-name">Жильё</h3>
             <p class="advantages-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
           <li class="advantages-item">
-            <img src="#" alt="Иконка Бургера">
+
             <h3 class="advantages-name">Еда</h3>
             <p class="advantages-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!!</p>
           </li>
           <li class="advantages-item">
-            <img src="#" alt="Иконка Подарочной Коробки">
+
             <h3 class="advantages-name">Сувениры</h3>
             <p class="advantages-description">Не только китайского,но и настоящего местного производства!</p>
           </li>
@@ -107,35 +105,52 @@
         <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
           <h2 class="mailing-title">Подпишитесь на рассылку</h2>
           <p class="mailing-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <label for="mailing"></label>
+          <label class="visually-hidden" for="mailing">
           <input id="mailing" type="text" name="mailing-date" placeholder="Ваш E-mail" required>
-          <button class="button" type="submit">Подписаться</button>
+          </label>
+          <button class="button" type="submit">
+            Подписаться
+          </button>
         </form>
       </section>
     </main>
     <footer class="form-footer">
+      <section class="mailing-email">
+        <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
+          <h2 class="mailing-title">Подпишитесь на рассылку</h2>
+          <p class="mailing-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <label for="mailing"></label>
+          <input id="mailing" type="text" name="mailing-date" placeholder="Ваш E-mail">
+          <button class="button" type="submit">Подписаться</button>
+        </form>
+      </section>
       <section class="footer-social">
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="social-link" href="https://vk.com/htmlacademy">
+            <a class="social-link" href="#">
               <span class="visually-hidden">ВКонтакте</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="social-link" href="https://t.me/htmlacademy">
+            <a class="social-link" href="#">
               <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
+            <a class="social-link" href="#">
               <span class="visually-hidden">Ютуб</span>
             </a>
           </li>
         </ul>
       </section>
-      <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      <a class="page-footer-logo">
-        <img class="footer-logotip" src="#" alt="htmlacademy">
+      <h3 class="visually-hidden"> Телефон </h3>
+      <address class="page-footer-address">
+        <a class="contact-phone" href="tel:+78128121212">
+          +7 (812) 812-12-12
+        </a>
+      </address>
+      <a href="https://htmlacademy.ru/">
+        <img class="page-footer-logo" width="115" height="33" src="#" alt="Логотип  html academy.">
       </a>
     </footer>
   </body>
