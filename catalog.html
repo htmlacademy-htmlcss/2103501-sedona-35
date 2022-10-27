@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -45,9 +46,9 @@
       </nav>
 
     </header>
-    <main class="main-iner">
+    <main class="main-inner">
       <header class="inner-header">
-        <h1 class="iner-header-title">
+        <h1 class="inner-header-title">
           Гостиницы Седоны
         </h1>
         <ul class="breadcrumbs">
@@ -127,84 +128,57 @@
             </button>
           </div>
         </form>
-        <select class="select-control" aria-label="Сортировка">
-          <option value="popular">
-            Сначала популярное
-          </option>
-          <option value="cheap">
-            Сначала дешёвое
-          </option>
-          <option value="expensive">
-            Сначала дорогое</option>
-        </select>
-        <a href="#" class="button button-light cards-sort-icon">
-          <span class="visually-hidden">Показать карточки</span>
-        </a>
-        <a href="#" class="button details-sort-icon">
-          <span class="visually-hidden">Показать подробный список</span>
-        </a>
-        <a href="#" class="button list-sort-icon">
-          <span class="visually-hidden">Показать список</span>
-        </a>
-        <ul class="catalog-filter-results">
-          <li class="catalog-filter-results-item">
-            <a class="item-link" href="#">
-              <img class="item-img" width="300" height="212" src="images/hotel-1.jpg"
-                alt="Гостиница Amara Resort & Spa.">
-              <h3 class="item-title">
-                Amara Resort & Spa
-              </h3>
-            </a>
-            <div class="type-price-wrapper">
-              <span class="item-type">
-                Гостиница
-              </span>
-              <b class="item-price">
-                От 4000 ₽
-              </b>
-            </div>
-            <div class="buttons-wrapper">
-              <a class="button-more" href="#">
-                Подробнее
+        <section class="catalog-hotels">
+          <span class="number-hotels-found">
+            Найдено гостиниц:
+            <b>
+              38
+            </b>
+          </span>
+          <select class="select-control" aria-label="Сортировка">
+            <option value="popular">
+              Сначала популярное
+            </option>
+            <option value="cheap">
+              Сначала дешёвое
+            </option>
+            <option value="expensive">
+              Сначала дорогое</option>
+          </select>
+          <a href="#" class="button button-light cards-sort-icon">
+            <span class="visually-hidden">Показать карточки</span>
+          </a>
+          <a href="#" class="button details-sort-icon">
+            <span class="visually-hidden">Показать подробный список</span>
+          </a>
+          <a href="#" class="button list-sort-icon">
+            <span class="visually-hidden">Показать список</span>
+          </a>
+          <ul class="catalog-filter-results">
+            <li class="catalog-filter-results-item">
+              <a class="item-link" href="#">
+                <img class="item-img" width="300" height="212" src="images/hotel-1.jpg"
+                  alt="Гостиница Amara Resort & Spa.">
+                <h3 class="item-title">
+                  Amara Resort & Spa
+                </h3>
               </a>
-              <button class="button-favorites">
-                В избранное
-              </button>
-            </div>
-            <div class="rating-item-wrapper">
-              <p class="rating-stars-wrapper rating-star four">
-                <span class="visually-hidden">
-                  4 звезды
+              <div class="type-price-wrapper">
+                <span class="item-type">
+                  Гостиница
                 </span>
-              </p>
-              <p class="rating-item-score">
-                Рейтинг: 8,5
-              </p>
-            </div>
-          </li>
-          <li class="catalog-filter-results-item">
-            <a href="#" class="item-link">
-              <img class="item-img" width="300" height="212" src="images/hotel-2.jpg"
-                alt="Гостиница Villas at Poco Diablo.">
-              <h3 class="item-title">
-                Villas at Poco Diablo
-              </h3>
-            </a>
-            <div class="type-price-wrapper">
-              <span class="item-type">
-                Гостиница
-              </span>
-              <b class="item-price">
-                От 5000 ₽
-              </b>
-            </div>
-            <div class="buttons-wrapper">
-              <a class="button-more" href="#">
-                Подробнее
-              </a>
-              <button class="button-favorites button-favorites-active">
-                В избранном
-              </button>
+                <b class="item-price">
+                  От 4000 ₽
+                </b>
+              </div>
+              <div class="buttons-wrapper">
+                <a class="button-more" href="#">
+                  Подробнее
+                </a>
+                <button class="button-favorites">
+                  В избранное
+                </button>
+              </div>
               <div class="rating-item-wrapper">
                 <p class="rating-stars-wrapper rating-star four">
                   <span class="visually-hidden">
@@ -212,115 +186,150 @@
                   </span>
                 </p>
                 <p class="rating-item-score">
-                  Рейтинг: 9,2
+                  Рейтинг: 8,5
                 </p>
               </div>
-            </div>
-          </li>
-          <li class="catalog-filter-results-item">
-            <a href="#" class="item-link">
-              <img class="item-img" width="300" height="212" src="images/hotel-3.jpg" alt="Гостиница Desert Quail Inn.">
-              <h3 class="item-title">
-                Desert Quail Inn
-              </h3>
-            </a>
-            <div class="type-price-wrapper">
-              <span class="item-type">
-                Гостиница
-              </span>
-              <b class="item-price">
-                От 2500 ₽
-              </b>
-            </div>
-            <div class="buttons-wrapper">
-              <a class="button-more" href="#">
-                Подробнее
+            </li>
+            <li class="catalog-filter-results-item">
+              <a href="#" class="item-link">
+                <img class="item-img" width="300" height="212" src="images/hotel-2.jpg"
+                  alt="Гостиница Villas at Poco Diablo.">
+                <h3 class="item-title">
+                  Villas at Poco Diablo
+                </h3>
               </a>
-              <button class="button-favorites">
-                В избранное
-              </button>
-            </div>
-
-            <div class="rating-item-wrapper">
-              <p class="rating-stars-wrapper rating-star three">
-                <span class="visually-hidden">
-                  3 звезды
+              <div class="type-price-wrapper">
+                <span class="item-type">
+                  Гостиница
                 </span>
-              </p>
-              <p class="rating-item-score">
-                Рейтинг: 6,9
-              </p>
-            </div>
-          </li>
-          <li class="catalog-filter-results-item">
-            <a href="#" class="item-link">
-              <img class="item-img" width="300" height="212" src="images/hotel-4.jpg" alt=" Гостиница GreenTree Inn.">
-              <h3 class="item-title">
-                GreenTree Inn
-              </h3>
-            </a>
-            <div class="type-price-wrapper">
-              <span class="item-type">
-                Гостиница
-              </span>
-              <b class="item-price">
-                От 1500 ₽
-              </b>
-            </div>
-            <div class="buttons-wrapper">
-              <a class="button-more" href="#">
-                Подробнее
+                <b class="item-price">
+                  От 5000 ₽
+                </b>
+              </div>
+              <div class="buttons-wrapper">
+                <a class="button-more" href="#">
+                  Подробнее
+                </a>
+                <button class="button-favorites button-favorites-active">
+                  В избранном
+                </button>
+                <div class="rating-item-wrapper">
+                  <p class="rating-stars-wrapper rating-star four">
+                    <span class="visually-hidden">
+                      4 звезды
+                    </span>
+                  </p>
+                  <p class="rating-item-score">
+                    Рейтинг: 9,2
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="catalog-filter-results-item">
+              <a href="#" class="item-link">
+                <img class="item-img" width="300" height="212" src="images/hotel-3.jpg"
+                  alt="Гостиница Desert Quail Inn.">
+                <h3 class="item-title">
+                  Desert Quail Inn
+                </h3>
               </a>
-              <button class="button-favorites">
-                В избранное
-              </button>
-            </div>
-            <div class="rating-item-wrapper">
-              <p class="rating-stars-wrapper rating-star two">
-                <span class="visually-hidden">
-                  2 звезды
+              <div class="type-price-wrapper">
+                <span class="item-type">
+                  Гостиница
                 </span>
-              </p>
-              <p class="rating-item-score">
-                Рейтинг: 5,0
-              </p>
-            </div>
-          </li>
-        </ul>
-        <ul class="pagination">
-          <li class="pagination-item pagination-item-active">
-            <a class="pagination-link" href="#">
-              1
-            </a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">
-              2
-            </a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">
-              3
-            </a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">
-              4
-            </a>
-          </li>
-          <li class="pagination-item pagination-more">
-            <a class="pagination-link" href="#">
-              ...
-            </a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">
-              10
-            </a>
-          </li>
-        </ul>
+                <b class="item-price">
+                  От 2500 ₽
+                </b>
+              </div>
+              <div class="buttons-wrapper">
+                <a class="button-more" href="#">
+                  Подробнее
+                </a>
+                <button class="button-favorites">
+                  В избранное
+                </button>
+              </div>
 
-      </section>
+              <div class="rating-item-wrapper">
+                <p class="rating-stars-wrapper rating-star three">
+                  <span class="visually-hidden">
+                    3 звезды
+                  </span>
+                </p>
+                <p class="rating-item-score">
+                  Рейтинг: 6,9
+                </p>
+              </div>
+            </li>
+            <li class="catalog-filter-results-item">
+              <a href="#" class="item-link">
+                <img class="item-img" width="300" height="212" src="images/hotel-4.jpg" alt=" Гостиница GreenTree Inn.">
+                <h3 class="item-title">
+                  GreenTree Inn
+                </h3>
+              </a>
+              <div class="type-price-wrapper">
+                <span class="item-type">
+                  Гостиница
+                </span>
+                <b class="item-price">
+                  От 1500 ₽
+                </b>
+              </div>
+              <div class="buttons-wrapper">
+                <a class="button-more" href="#">
+                  Подробнее
+                </a>
+                <button class="button-favorites">
+                  В избранное
+                </button>
+              </div>
+              <div class="rating-item-wrapper">
+                <p class="rating-stars-wrapper rating-star two">
+                  <span class="visually-hidden">
+                    2 звезды
+                  </span>
+                </p>
+                <p class="rating-item-score">
+                  Рейтинг: 5,0
+                </p>
+              </div>
+            </li>
+          </ul>
+          <ul class="pagination">
+            <li class="pagination-item pagination-item-active">
+              <a class="pagination-link" href="#">
+                1
+              </a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">
+                2
+              </a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">
+                3
+              </a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">
+                4
+              </a>
+            </li>
+            <li class="pagination-item pagination-more">
+              <a class="pagination-link" href="#">
+                ...
+              </a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">
+                10
+              </a>
+            </li>
+          </ul>
+
+        </section>
 
     </main>
 
@@ -337,17 +346,17 @@
       <section class="footer-social">
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="social-link" href="#">
+            <a class="social-link" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">ВКонтакте</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="social-link" href="#">
+            <a class="social-link" href="https://t.me/htmlacademy ">
               <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="social-link" href="#">
+            <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Ютуб</span>
             </a>
           </li>
