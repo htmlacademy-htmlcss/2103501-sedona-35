@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Гостиницы Седоны</title>
+    <link rel="stylesheet" href="styles/styles.css">
     <base href="https://htmlacademy-htmlcss.github.io/2103501-sedona-35/3/">
 </head>
 
@@ -45,20 +46,24 @@
 
     </header>
     <main class="main-index">
+      <div class="prime">
       <section class="prewiew">
         <h1 class="visually-hidden">Основная информация о городе Седона</h1>
-        <img class="prewiew-logo" src="images/prime-text.svg" alt="Добро пожаловать великолепное место  Седона " width="458" height="352">
+        <img class="prewiew-logo" src="images/prime-text.svg" alt="Добро пожаловать великолепное место  Седона "
+          width="458" height="352">
         <h2 class="main-description-title">Седона — небольшой городок в Аризоне,
           заслуживающий большего!</h2>
         <p class="main-description-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
+    </div>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages-list">
-          <li class="advantages-item">
-            <h3 class="advantages-name">Настоящий Городок</h3>
+          <li class="advantages-item advantages-background">
+            <h3 class="advantages-name name-white">Настоящий Городок</h3>
             <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            <img class="advantages-image" src="images/real-town.jpg" alt="Гостиница в городе Седона" width="800" height="400">
+            <img class="advantages-image" src="images/real-town.jpg" alt="Гостиница в городе Седона" width="800"
+              height="400">
           </li>
           <li class="advantages-item">
             <h3 class="advantages-name">Небольшая площадь</h3>
@@ -74,9 +79,9 @@
           </li>
         </ul>
         <ul class="advantages-list">
-          <li class="advantages-item">
+          <li class="advantages-item advantages-background">
             <img class="advantages-image" src="images/bridge_devil.jpg" alt="Мост дьявола" width="800" height="384">
-            <h3 class="advantages-name">Там есть мост дьявола</h3>
+            <h3 class="advantages-name name-white">Там есть мост дьявола</h3>
             <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </li>
           <li class="advantages-item">
@@ -84,7 +89,7 @@
             <h3 class="advantages-name">Жильё</h3>
             <p class="advantages-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
-          <li class="advantages-item">
+          <li class="advantages-item advantages-white">
 
             <h3 class="advantages-name">Еда</h3>
             <p class="advantages-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!!</p>
@@ -103,42 +108,35 @@
         <a class="button search-hotel-link" href="#">поиск гостиниц в седоне</a>
       </section>
       <section class="mailing-email">
+        <div class="subcribe-form">
         <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
           <h2 class="mailing-title">Подпишитесь на рассылку</h2>
           <p class="mailing-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <label class="visually-hidden" for="mailing">
-          <input id="mailing" type="text" name="mailing-date" placeholder="Ваш E-mail" required>
+            <input id="mailing" type="text" name="mailing-date" placeholder="Ваш E-mail" required>
           </label>
-          <button class="button" type="submit">
+          <button class="button subscribe-submit" type="submit">
             Подписаться
           </button>
         </form>
+        </div>
       </section>
     </main>
     <footer class="form-footer">
-      <section class="mailing-email">
-        <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
-          <h2 class="mailing-title">Подпишитесь на рассылку</h2>
-          <p class="mailing-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <label for="mailing"></label>
-          <input id="mailing" type="text" name="mailing-date" placeholder="Ваш E-mail">
-          <button class="button" type="submit">Подписаться</button>
-        </form>
-      </section>
       <section class="footer-social">
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="social-link" href="#">
+            <a class="social-link" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">ВКонтакте</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="social-link" href="#">
+            <a class="social-link" href="https://t.me/htmlacademy ">
               <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="social-link" href="#">
+            <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Ютуб</span>
             </a>
           </li>
@@ -151,7 +149,8 @@
         </a>
       </address>
       <a href="https://htmlacademy.ru/">
-        <img class="page-footer-logo" src="images/html-academy.svg" width="115" height="33"  alt="Логотип  html academy.">
+        <img class="page-footer-logo" src="images/html-academy.svg" width="115" height="33"
+          alt="Логотип  html academy.">
       </a>
     </footer>
   </body>
