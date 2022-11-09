@@ -78,63 +78,61 @@ body {
  /* navigation */
 .navigation {
   display: flex;
-  align-items: center;
-  margin-left: 30px;
-  width: 1000px;
-}
-.navigation-list {
-  display: flex;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 500px;
-}
-.navigation-user-item:last-child {
-  margin-left: 20px;
-}
-.navigation-list-item{
-  padding: 20px 0;
-  margin-left: 16px;
-  margin-right: 16px;
-}
-
-
-.navigation-user {
-  display: flex;
-  list-style-type: none;
-  padding: 0;
-  margin-left: auto;
-  margin-right: 70px;
-}
-.navigation-list-item-user {
-  display: flex;
-  align-items: center;
-}
-.navigation-link {
-  text-decoration: none;
-}
-
-
-.prewiew-logo {
-  display: block;
   margin: 0 auto;
+  width: 1060px;
 }
-.page-header-logo {
-  display: block;
-  width: 140px;
-  margin-left: 70px;
-}
-
-
-
 .navigation-link {
-  font-family: "PT Sans Narrow", sans-serif;
+  position: relative;
+  display: inline-block;
   line-height: 24px;
   font-size: 20px;
   color: inherit;
   font-weight: 700;
   text-decoration: none;
 }
+.navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0 0 0 184px;
+  padding: 0;
+  width: 550px;
+}
+.navigation-user-item:last-child {
+  margin-left: 20px;
+}
+.navigation-list-item{
+  padding: 20px 0;
+}
+.navigation-list-item:not(:first-child) {
+  margin-left: 16px;
+}
+.navigation-list-item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.navigation-user {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 0 auto;
+}
+.navigation-list-item-user {
+  display: flex;
+  align-items: center;
+}
+
+.page-header-logo {
+  display: block;
+  position: absolute;
+  width: 140px;
+  margin-right: 46px;
+}
+
+
+
+
 .navigation-list-item-current {
   border-bottom: 2px solid #756257;
 }
@@ -162,57 +160,43 @@ body {
   padding: 8px 34px;
 }
 
-.subscribe-head {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  text-transform: uppercase;
-  margin: 96px 0 20px 0;
-}
 
-.subscribe-description {
-  font-size: 22px;
-  line-height: 26px;
-  margin: 0 0 54px 0;
-}
 .hero {
   display: flex;
   justify-content: center;
   align-items: center;
   background-size: 1200px 485px;
-  background: url("/images/prime-trim.svg") no-repeat bottom, url("/images/prime-background.jpg") no-repeat center;
+  background: url("../images/prime-trim.svg") no-repeat bottom, url("../images/prime-background.jpg") no-repeat center;
   width: 1200px;
   min-height: 485px;
 }
 
 .main-description {
-  display: flex;
   width: 1200px;
-  min-height: 282px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 20px 0 65px 0;
+  text-align: center;
 }
 .main-description-title {
+  display: inline-block;
   width: 620px;
-  text-align: center;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
-  margin: 0 0 25px 0;
+  margin: 49px 0 25px 0;
 }
 
 .main-description-text {
   font-size: 22px;
   line-height: 26px;
-  margin: 0;
+  margin: 0 0 25px 0;
 }
 .advantages {
   width: 1200px;
 }
 .advantages-list {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -220,15 +204,19 @@ body {
 .advantages-item{
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   padding: 103px 85px 121px 85px;
-  width: 400px;
+  width: 230px;
+  min-height: 160px;
   word-wrap: break-word;
 }
 .advantages-item-with-icon{
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 80px 85px 81px 85px;
-  width: 400px;
+  width: 230px;
+  min-height: 223px;
   word-wrap: break-word;
 }
 .advantages-name{
@@ -240,11 +228,10 @@ body {
   text-transform: uppercase;
 }
 .advantages-name-with-icon {
-  text-align: center;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  margin: 30px auto;
+  margin: 102px auto 30px;
   text-transform: uppercase;
 }
 .advantages-description {
@@ -252,7 +239,10 @@ body {
   margin: 0;
 }
 .advantages-item-icon {
-  margin: auto;
+  background: #82b3d3;
+  color: #ffffff;
+  word-wrap: break-word;
+  max-height: 384px;
 }
 .advantages-item-with-picture {
   display: flex;
@@ -263,17 +253,18 @@ body {
 .advantages-item-with-picture-description-container {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  position: relative;
   padding: 92px 85px 111px 85px;
-  width: 400px;
+  width: 230px;
+  min-height: 181px;
 }
 
 
   .search-hotel{
+    text-align: center;
     width: 1200px;
-  min-height: 410px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    padding: 20px 0 70px 0;
   }
   .search-hotel-container{
     width: 600px;
@@ -286,33 +277,35 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin: 0 0 20px 0;
+  margin: 96px 0 20px 0;
 }
 .search-hotel-text{
   font-size: 22px;
   line-height: 26px;
-  margin: 0 0 54px 0;
+  margin: 0 0 34px 0;
 }
 .search-hotel-link{
+  display: inline-block;
+  width: 376px;
   font-size: 20px;
   line-height: 36px;
   padding: 8px 50px;
+  margin-bottom: 26px;
+  margin-top: 20px;
 }
 .subscribe{
   background: #f2f2f2 url("/images/subscribe-background.jpg") no-repeat;
   background-size: 1200px;
-  width: 1200px;
-  min-height: 415px;
+  width: 1160px;
   color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
+  padding: 20px;
 }
 .subscribe-form{
   display: flex;
+  width: 684px;
   border-radius: 4px;
-  margin-bottom: 104px;
+  margin: 30px auto 84px auto;
 }
 .subscribe-email-input{
   width: 450px;
@@ -323,28 +316,11 @@ body {
 }
 .subscribe-description {
   width: 480px;
-  text-align: center;
+  display: inline-block;
 }
 .subscribe-submit {
   border-radius: 0 4px 4px 0;
   padding: 8px 50px;
-}
-
-
-.search-hotel {
-  background-color: #FFFFFF;
-  text-align: center;
-}
-
-.search-hotel-title {
-  font-size: 30px;
-  line-height: 36px;
-  font-weight: 700;
-}
-
-.search-hotel-text {
-  font-size: 22px;
-  line-height: 26px;
 }
 
 
@@ -385,6 +361,13 @@ body {
   margin-left: 82px;
 }
 
+.page-footer {
+  display: flex;
+  align-items: center;
+  width: 1200px;
+  min-height: 120px;
+  background-color: #ffffff;
+}
 .page-footer-contacts {
   text-align: center;
   margin-left: 237px;
@@ -420,7 +403,7 @@ body {
 }
 
 .inner-header {
-  background: url("/images/background-header.jpg")no-repeat;
+  background:#f2f2f2 url("/images/background-header.jpg")no-repeat;
   background-size: 1200px 412px;
   width: 1200px;
   color: #ffffff;
