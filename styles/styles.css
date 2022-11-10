@@ -162,13 +162,11 @@ body {
 
 
 .hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: 1200px 485px;
   background: url("../images/prime-trim.svg") no-repeat bottom, url("../images/prime-background.jpg") no-repeat center;
-  width: 1200px;
   min-height: 485px;
+}
+.hero-img {
+  margin: 51px 371px 82px 371px;
 }
 
 .main-description {
@@ -239,16 +237,14 @@ body {
   margin: 0;
 }
 .advantages-item-icon {
-  background: #82b3d3;
-  color: #ffffff;
-  word-wrap: break-word;
-  max-height: 384px;
+  margin: auto;
 }
 .advantages-item-with-picture {
   display: flex;
   background: #82b3d3;
   color: #ffffff;
   word-wrap: break-word;
+  max-height: 384px;
 }
 .advantages-item-with-picture-description-container {
   display: flex;
@@ -524,6 +520,8 @@ breadcrumbs-link {
   font-weight: 700;
   line-height: 24px;
   text-align: left;
+  padding: 0;
+  margin-bottom: 32px;
 }
 
 /* Button catalog */
@@ -616,7 +614,7 @@ breadcrumbs-link {
   padding-bottom: 7px;
 }
 
-.select-control-sort {
+.select-control{
   font-size: 18px;
   line-height: 21px;
   margin-left: 200px;
@@ -639,6 +637,7 @@ breadcrumbs-link {
   display: flex;
   margin-bottom: 16px;
 }
+
 .item-title {
   font-size: 24px;
   font-weight: 700;
@@ -655,10 +654,22 @@ breadcrumbs-link {
   text-align: right;
   font-weight: 400;
 }
+.item-link {
+  text-decoration: none;
+  color: #000000;
+  margin-bottom: 16px;
+}
 
+.buttons-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
 
-
-
+.rating-item-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
 
 .rating-item-score {
   font-size: 16px;
@@ -696,6 +707,7 @@ breadcrumbs-link {
   padding-bottom: 12px;
   text-align: center;
   margin-right: 8px;
+  cursor: pointer;
 }
 
 .pagination-item-active {
@@ -727,20 +739,18 @@ breadcrumbs-link {
 }
 
 .subscribe-catalog-head {
-  font-size: 30px;
   font-weight: 700;
+  font-size: 30px;
   line-height: 36px;
-  margin-top: 96px;
-  margin-bottom: 0;
   text-transform: uppercase;
+  margin: 76px 0 20px 0;
 }
 
 .subscribe-catalog-description {
+  display: inline-block;
   font-size: 22px;
   line-height: 26px;
-  margin-top: 20px;
-  margin-bottom: 54px;
-  text-align: center;
+  margin: 0 0 24px 0;
 }
 
 .subscribe-catalog-email-input {
