@@ -356,9 +356,6 @@ body {
   padding: 8px 50px;
 }
 
-
-
-
 .mailing-title {
   color: #FFFFFF;
   font-size: 30px;
@@ -438,7 +435,7 @@ body {
 }
 
 .inner-header {
-  background: #f2f2f2 url("/images/background-header.jpg")no-repeat;
+  background: #f2f2f2 url("../images/background-header.jpg")no-repeat;
   background-size: 1200px 412px;
   width: 1200px;
   color: #ffffff;
