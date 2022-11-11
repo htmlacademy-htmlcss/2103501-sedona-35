@@ -33,6 +33,16 @@ body {
 
 
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .shadow {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
@@ -74,27 +84,21 @@ body {
 
 /* Pages */
 .page-header {
-  display: flex;
   background: #ffffff;
-  width: 1200px;
-  height: 64px;
+}
+.page-header-logo {
+  display: block;
+  position: absolute;
+  width: 140px;
+  margin-right: 46px;
 }
 
 /* navigation */
+
 .navigation {
   display: flex;
   margin: 0 auto;
   width: 1060px;
-}
-
-.navigation-link {
-  position: relative;
-  display: inline-block;
-  line-height: 24px;
-  font-size: 20px;
-  color: inherit;
-  font-weight: 700;
-  text-decoration: none;
 }
 
 .navigation-list {
@@ -106,18 +110,9 @@ body {
   width: 550px;
 }
 
-.navigation-user-item:last-child {
-  margin-left: 20px;
-}
-
-.navigation-list-item {
-  padding: 20px 0;
-}
-
 .navigation-list-item:not(:first-child) {
   margin-left: 16px;
 }
-
 .navigation-list-item:not(:last-child) {
   margin-right: 16px;
 }
@@ -130,27 +125,35 @@ body {
   margin: 0 0 0 auto;
 }
 
-.navigation-list-item-user {
+.navigation-user-item:last-child {
+  margin-left: 20px;
+}
+
+.navigation-user-item {
   display: flex;
   align-items: center;
 }
 
-.page-header-logo {
-  display: block;
+.navigation-link {
+  position: relative;
+  display: inline-block;
+  line-height: 24px;
+  font-size: 20px;
+  color: inherit;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 20px 0;
+}
+
+.navigation-link-current:after {
+  content: "";
   position: absolute;
-  width: 140px;
-  margin-right: 46px;
-}
-
-
-
-
-.navigation-list-item-current {
-  border-bottom: 2px solid #756257;
-}
-
-.navigation-link-icon {
-  padding: 23px 13px;
+  background-color: #756257;
+  border: 1px solid #756257;
+  top: 63px;
+  left: 0;
+  box-sizing: inherit;
+  width: 100%;
 }
 
 .main-index {
@@ -161,20 +164,8 @@ body {
   flex-grow: 1;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 
-.i-want-here {
-  padding: 8px 34px;
-}
+
 
 
 .hero {
@@ -187,8 +178,8 @@ body {
 }
 
 .main-description {
-  width: 1200px;
-  padding: 20px 0 65px 0;
+  width: 1160px;
+  padding: 69px 20px 65px ;
   text-align: center;
 }
 
@@ -284,6 +275,7 @@ body {
   min-height: 181px;
 }
 
+/* ZAINTERESOVALIS? */
 
 .search-hotel {
   text-align: center;
@@ -321,7 +313,30 @@ body {
   margin-bottom: 26px;
   margin-top: 20px;
 }
+/* section subscribe */
 
+.subscribe-head {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin: 76px 0 20px 0;
+}
+
+.subscribe-description {
+  font-size: 22px;
+  line-height: 26px;
+  margin: 0 0 24px 0;
+}
+
+.subscribe-submit {
+  background: #82b3d3;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  border: none;
+}
 .subscribe {
   background: #f2f2f2 url("/images/subscribe-background.jpg") no-repeat;
   background-size: 1200px;
@@ -346,15 +361,6 @@ body {
   padding-left: 20px;
 }
 
-.subscribe-description {
-  width: 480px;
-  display: inline-block;
-}
-
-.subscribe-submit {
-  border-radius: 0 4px 4px 0;
-  padding: 8px 50px;
-}
 
 .mailing-title {
   color: #FFFFFF;
@@ -370,25 +376,15 @@ body {
   line-height: 26px;
 }
 
-.contact-phone {
-  font-size: 40px;
-  line-height: 40px;
-  color: #000000;
-  font-style: normal;
-}
 
-/* Page-footer */
+
+/* Contact */
 .form-footer {
   display: flex;
   align-items: center;
   width: 1200px;
   min-height: 120px;
   background-color: #ffffff;
-}
-
-.footer-social {
-  width: 140px;
-  margin-left: 82px;
 }
 
 .page-footer {
@@ -398,11 +394,15 @@ body {
   min-height: 120px;
   background-color: #ffffff;
 }
-
+.page-footer-links {
+  width: 140px;
+  margin-left: 82px;
+}
 .page-footer-contacts {
   text-align: center;
   margin-left: 237px;
 }
+
 
 .page-footer-logos {
   margin-left: 237px;
@@ -425,7 +425,10 @@ body {
 }
 
 .contact-phone {
-  text-decoration: none;
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+  font-style: normal;
 }
 
 /* Catalog */
