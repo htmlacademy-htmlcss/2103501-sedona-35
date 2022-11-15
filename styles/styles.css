@@ -517,13 +517,13 @@ body {
 }
 
 .subscribe {
-  background: #f2f2f2 url("../images/subscribe-background.jpg") no-repeat;
+  background:  url("../images/subscribe-background.jpg") no-repeat;
   background-size: 1200px;
   background-color: #82b3d3;
   width: 1120px;
   color: #ffffff;
   text-align: center;
-  padding: 96px 40px 20px
+  padding: 96px 40px 20px;
 }
 
 .subscribe-form {
