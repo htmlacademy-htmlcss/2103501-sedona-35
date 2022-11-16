@@ -109,8 +109,8 @@ img {
 .page-header-logo {
   display: block;
   position: absolute;
-  width: 140px;
   margin-right: 46px;
+  width: 140px;
 }
 
 .page-header-logo[href]:hover {
