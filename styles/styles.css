@@ -311,7 +311,7 @@ img {
   fill: #68a2ca;
 }
 
-.vk:active {
+.vk:active path {
   fill: rgba(104, 162, 202, 0.3);
 }
 
@@ -601,6 +601,7 @@ img {
   text-align: center;
   margin-left: 237px;
   margin-top: 5px;
+  width: 331;
 }
 
 .page-footer-logos {
@@ -717,6 +718,7 @@ img {
   padding: 12px 40px 12px 20px;
   width: 83px;
   border: none;
+  appearance: textfield;
 }
 
 .input-price:not(:disabled):hover {
@@ -724,14 +726,25 @@ img {
 }
 
 .input-price:not(:disabled):focus {
-  background-color: #f2f2f2;
   outline: none;
+  border: #000000 solid 2px;
+  padding: 10px 38px 10px 18px;
+  background-color: #f2f2f2;
 }
 
 .input-price::-webkit-outer-spin-button,
 .input-price::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
+}
+
+.input-price:hover {
+  background-color: #e6e6e6;
+  border: 2px solid #e6e6e6;
+}
+
+.input-price:focus {
+  background-color: #e6e6e6;
 }
 
 .input-price:active {
@@ -1053,7 +1066,10 @@ img {
   width: 88px;
 }
 
-.button-more:hover,
+.button-more:hover {
+  background-color: #615048;
+}
+
 .button-more:focus {
   background-color: #615048;
 }
@@ -1127,7 +1143,7 @@ img {
   margin-right: auto;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
-  background-image: url("../images/arrow-bottom.svg");
+  background-image: url("../images/catalog-page/arrow-bottom.svg");
   background-repeat: no-repeat;
   background-position: right 17px center;
   appearance: none;
@@ -1241,6 +1257,8 @@ img {
 .rating-stars-wrapper {
   margin: 10px auto 10px 0;
   max-width: 140px;
+  align-self: center;
+  height: 17px;
 }
 
 .rating-star {
@@ -1522,7 +1540,7 @@ img {
 }
 
 .count-minus svg {
-  margin-top: 4px;
+  margin-top: 18px;
   margin-left: 6px;
 }
 
@@ -1577,6 +1595,7 @@ img {
   border: none;
   text-align: center;
   background-color: #f2f2f2;
+  appearance: textfield;
 }
 
 .count-input:not(:disabled):hover {
