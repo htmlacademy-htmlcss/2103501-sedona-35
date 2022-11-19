@@ -588,7 +588,7 @@ img {
   width: 1120px;
   color: #ffffff;
   text-align: center;
-  padding: 96px 40px 20px;
+  padding: 99px 40px 20px;
 }
 
 .subscribe-form {
@@ -639,9 +639,8 @@ img {
 
 .page-footer-contacts {
   text-align: center;
-  margin-left: 237px;
-  margin-top: 5px;
   width: 331px;
+  margin: 5px 0 0 237px;
 }
 
 .page-footer-logos {
@@ -686,6 +685,7 @@ img {
   color: #000000;
   font-style: normal;
   width: 333px;
+  margin-bottom: 2px;
 }
 
 .contact-phone:hover,
@@ -1576,7 +1576,7 @@ img {
   line-height: 36px;
   text-transform: uppercase;
   margin: 0 0 64px 0;
-  width: 413px;
+  width: 414px;
 }
 
 .field-group {
